@@ -210,5 +210,7 @@ app.add_handler(CommandHandler("uploadcsv", uploadcsv_command))
 app.add_handler(MessageHandler(filters.Document.FileExtension("csv"), handle_csv))
 app.add_handler(CallbackQueryHandler(button_handler))
 
-print("🤖 Bot running...")
-app.run_polling()
+if __name__ == "__main__":
+    print("🤖 Bot running...")
+    app.run_polling()
+
