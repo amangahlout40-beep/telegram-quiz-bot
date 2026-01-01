@@ -15,7 +15,7 @@ from telegram.ext import (
 )
 
 # ================= CONFIG =================
-BOT_TOKEN = "7986638145:AAGlVgu88PNVO-_cXSYP4ufq7PPDyx4czwY"  # BotFather token
+BOT_TOKEN = os.getenv("BOT_TOKEN")  # BotFather token
 ADMIN_ID = 5325051912
 DATA_DIR = "files"
 QUESTION_GAP = 5  # Har 5 question ke baad official message
